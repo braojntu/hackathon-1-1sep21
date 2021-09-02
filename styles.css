@@ -19,7 +19,7 @@
  
  /*Application Interface Specific Design Begins*/
  
-     .container {
+     .fixed-container {
          font-family: sans-serif;
          width: 100%;
          display: grid;
@@ -36,6 +36,7 @@
          background-color: blueviolet;
          color: white;
          width: 100%;
+         position: fixed;
      }
  
      .heading>.title {
@@ -53,10 +54,11 @@
      }
  
      .form-wrapper > div {
-         margin-top: 1rem;
+         margin-top: 6rem;
          margin-bottom: 2rem;
          display: flex;
          width: 120rem;
+         position: relative;
      }
  
      .form-input {
@@ -138,15 +140,19 @@
 .prodcont {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .card {
-    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
-    max-width: 30rem;
-    margin: auto;
-    padding: 2rem 2rem 2rem 2rem;
+    max-width: 40rem;
+    margin: 1rem;
+   /* padding: 2rem 2rem 2rem 2rem;*/
     text-align: center;
-    font-family: arial;
+    font-family: sans-serif;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+   
   }
   
   .price {
@@ -154,18 +160,30 @@
     font-size: 2.2rem;
   }
   
+  .card-text {
+      font-size: 1.5rem;
+      font-display: block;
+      margin: 1rem 1rem 1rem 1rem;
+  }
+
   .card button {
     border: none;
     outline: 0;
-    padding: 1rem;
+    padding: 1.8rem;
     color: white;
-    background-color: #000;
+    font-size: 2.4rem;
+    font-weight: 600;
+    background-color: blueviolet;
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 1.8rem;
+        
   }
   
+  a {
+    text-decoration: none;
+    color: white;
+  }
   .card button:hover {
     opacity: 0.7;
   }
