@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Women Powerup</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <p class="title">Women Power - Makeup API</p>
+        </div>
+        <div class="form-wrapper">
+            <div class="form-input">
+                <div style="float:left;margin-right:20px;">
+                    <label for="dd-prod">Product</label>
+                    <select name="dd-prod" id="dd-prod">
+                        <option value="">Product1</option>
+                        <option value="">Product1</option>
+                        <option value="">Product1</option>
+                    </select>
+                </div>
+                <div style="float:left;margin-right:20px;">
+                    <label for="dd-cat">Category</label>
+                    <select name="dd-cat" id="dd-cat">
+                        <option value="">Category1</option>
+                        <option value="">Category2</option>
+                        <option value="">Category3</option>
+                    </select>
+                </div>
+
+                <div style="float:left;margin-right:20px;">
+                    <label for="dd-brand">Brand</label>
+                    <select name="dd-brand" id="dd-brand">
+                        <option value="">Brand1</option>
+                        <option value="">Brand2</option>
+                        <option value="">Brand3</option>
+                    </select>
+                </div>
+
+                <div class="search-cont" style="float:left;">
+                    <input class="search" type="button" value="Search" onclick="fecthprod()">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="prodcont" id="prodcont">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
